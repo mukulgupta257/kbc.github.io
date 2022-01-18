@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>KBC: A quiz game</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="blacklayer"></div>
+    <div id="startgame">
+        <div id="confirmbox">
+                <span>You will get 20 sec for each question</span>
+                <span>You can use lifeline 50:50 from start</span>
+                <span>A lifeline can only be used once</span>
+                <span>Timer will stop if you use lifeline</span>
+                <span>Once you have answered 5 question correctly you can use audiance poll</span>
+            <button id="start">Start Game</button>
+        </div>
+    </div>
+    <div id="gameInterface">
+        <div id="logo_left">
+            <img src="./logo.png">
+        </div>
+        <div id="questionReward">
+            <div id="lifeline">
+                <span class="lifeline" id="half">50:50</span>
+                <span class="lifeline" id="used">50:50</span>
+                <span class="lifeline">Poll</span>
+                <span id="timer">MM:SS</span>
+            </div>
+            <span class="milestone">15. 5 Crore</span>
+            <span>14. 3 Crore</span>
+            <span>13. 1 Crore</span>
+            <span>12. 75,00,000</span>
+            <span>11. 50,00,000</span>
+            <span>10. 25,00,000</span>
+            <span>09. 12,50,000</span>
+            <span class="milestone">08.  6,40,000</span>
+            <span>07.  3,80,000</span>
+            <span>06.  1,60,000</span>
+            <span>05.    80,000</span>
+            <span class="milestone">04.    40,000</span>
+            <span>03.    20,000</span>
+            <span>02.    10,000</span>
+            <span>01.      5000</span>
+        </div>
+    </div>
+    <div id="gameplay">
+        <div id="gamescreen">
+            <!-- question 1-->
+            <div id="question1">
+                <div class="questions">
+                    <span id="question">Who was the first prime minister of india ?</span>
+                </div>
+                <div id="answers">
+                    <div class="ansrow">
+                        <span id="option1" class="ans">A.Jawaharlal Nehru</span>
+                        <span id="option2" class="ans">B.Indira Gandhi</span>
+                    </div>
+                    <div class="ansrow">
+                        <span id="option3" class="ans">C.Atal Bihari Vajpayee</span>
+                        <span id="option4" class="ans">D.Narendra Modi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question 2 -->
+            
+            <div id="question2">
+                <div class="questions">
+                    <span class="question">In which group of places kumbh mela is held every 12 year ?</span>
+                </div>
+                <div id="answers">
+                    <div class="ansrow">
+                        <span id="option1q2" class="ans">A.Ujjain, Puri, Prayag, Haridwar</span>
+                        <span id="option2q2" class="ans">B.Pryag, Haridwar, Ujjain, Nasik</span>
+                    </div>
+                    <div class="ansrow">
+                        <span id="option3q2" class="ans">C.Rameshwaram, puri, Badrinath, Dwarika</span>
+                        <span id="option4q2" class="ans">D.Ujjain, Pryag, Nasik, chittakoot</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- question3 -->
+            <div id="question3">
+                <div class="questions">
+                    <span id="question">International literacy Day is observed on ?</span>
+                </div>
+                <div id="answers">
+                    <div class="ansrow">
+                        <span id="option1q3" class="ans">A. September 8</span>
+                        <span id="option2q3" class="ans">B. November 28</span>
+                    </div>
+                    <div class="ansrow">
+                        <span id="option3q3" class="ans">C. May 2</span>
+                        <span id="option4q3" class="ans">D. September 22</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question4 -->
+            <div id="question4">
+                <div class="questions">
+                    <span id="question">Which day is observed as world standard day ?</span>
+                </div>
+                <div id="answers">
+                    <div class="ansrow">
+                        <span id="option1q4" class="ans">A. September 8</span>
+                        <span id="option2q4" class="ans">B. August 7</span>
+                    </div>
+                    <div class="ansrow">
+                        <span id="option3q4" class="ans">C. June 25</span>
+                        <span id="option4q4" class="ans">D. October 14</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- question 5 -->
+             <!-- question4 -->
+             <div id="question5">
+                <div class="questions">
+                    <span id="question">The language of Lakshadweep, a union territory of india is ?</span>
+                </div>
+                <div id="answers">
+                    <div class="ansrow">
+                        <span id="option1q5" class="ans">A. Hindi</span>
+                        <span id="option2q5" class="ans">B. Malayalam</span>
+                    </div>
+                    <div class="ansrow">
+                        <span id="option3q5" class="ans">C. Tamil</span>
+                        <span id="option4q5" class="ans">D. Telugu</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- restart game after fail -->
+        <div id="restart">
+            <span id="msg">You Lost</span>
+            <button id="resetGame">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>

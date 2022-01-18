@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#blacklayer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.7;
+}
+
+#startgame{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start{
+    margin: 2%;
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    border: none;
+    outline: #000 solid 2px;
+    background-color: #98fb98;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+    animation: startgame 1s;
+    animation-iteration-count: infinite;
+}
+
+
+#confirmbox{
+    box-shadow: 0px 0px 10px #fff;
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmbox > span{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0.5%;
+}
+
+#gameInterface{
+    height: 70vh;
+    background-image: radial-gradient(#ff00ff,#000); 
+    display: flex;
+    width: 100vw;
+    z-index: 0;
+}
+
+#logo_left{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#questionReward{
+    width: 50vw;
+    height: 100%;
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+#lifeline{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#timer{
+    width: 20%;
+    height: 90%;
+    background: #00279c;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #fff;
+    cursor: not-allowed;
+}
+
+.lifeline{
+    width: 20%;
+    height: 90%;
+    background: linear-gradient(#0000ff,#000);
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff7f50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lifeline:active{
+    transform: scale(0.95);
+}
+
+#questionReward > span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+}
+
+.milestone{
+    color: #ffa500;
+}
+
+#gameplay{
+    background: #000;
+    height: 30vh;
+    width: 100vw;
+}
+
+#gamescreen{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions{
+    width: 90vw;
+    height: 40%;
+    margin: 0px auto;
+    background: radial-gradient(#0000ff,#000);
+    border: 2px solid white;
+    border-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#answers{
+    width: 90vw;
+    height: 50%;
+    margin: 0px auto;
+
+}
+
+.ansrow{
+    margin: 1%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ans{
+    display: none;
+    width: 40%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background: radial-gradient(#0000ff,#000);
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5%;
+    cursor: pointer;
+    animation: answerAppear 1s ease-in-out ;
+}
+
+.ans:hover{
+    background: #fff;
+    color: #000;
+}
+
+#question2{
+    display: none;
+}
+
+#question3{
+    display: none;
+}
+
+#question4{
+    display: none;
+}
+#question5{
+    display: none;
+}
+
+
+.trueanswer{
+    background: #008000;
+    animation: trueanswer 0.5s;
+    animation-iteration-count: 2;
+}
+
+.fail{
+    background: #ff0000;
+    animation: wrongans 0.5s;
+    animation-iteration-count: 2;
+}
+
+.notclicked{
+    background: #ff4500;
+    animation: sucessful 0.5s ;
+    animation-iteration-count: 2;
+}
+
+
+#restart{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+#resetGame{
+    margin: 1%;
+    height: 30%;
+    width: 17%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    background: #4169e1;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#resetGame:hover{
+    transform: scale(1.2);
+}
+
+
+#resetGame:active{
+    transform: scale(1);
+}
+
+.half{
+    visibility: hidden;
+}
+
+#used{
+    cursor: not-allowed;
+    display: none;
+}
+
+@keyframes answerAppear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+@keyframes trueanswer {
+    0% {background-color: white; transform: scale(0.98);}
+    50% {background-color: #008000; transform: scale(1);}
+    75% {background-color: white; transform: scale(0.98);}
+    100% {background-color: #008000; transform: scale(1);}
+
+}
+
+@keyframes sucessful {
+    0% {background-color: #ff4500; transform: scale(0.99);}
+    100% {background-color: #ff4500; transform: scale(1);}
+}
+
+@keyframes wrongans {
+    0% {background: #ff0000; position: relative; left: 5px;}
+    50% {background: #ff0000; position: relative; left: -5px;}
+    70% {background: #ff0000; position: relative; left: 5px;}
+    100% {background: #ff0000; position: relative; left: -5px;}
+}
+
+@keyframes startgame {
+    0%,100% {transform: scale(1);}
+    50% {transform: scale(0.9);}
+    
+}
